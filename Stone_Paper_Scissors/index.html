@@ -1,0 +1,141 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+
+          
+
+    <div class="button-container">
+
+        
+       
+        <div class="title-div">
+
+            <p class="title"> Rock-Paper-Scissors</p>
+        
+             </div>
+
+        <button  onclick="
+            
+         //rock
+         let result=``;
+         let computermove=``;
+         
+           computermove= computer_move();
+
+           if(computermove === `Rock`){
+              result=`Tie`;
+            }
+
+            else if(computermove === `Paper`){
+                
+                    result=`You Lose`;
+                }
+
+            else if(computermove ===`Scissors`){
+                
+                result=`You Win`;
+            }
+              
+                    
+          alert(`You picked Rock . Computer Picked ${computermove}.Result : ${result} `);
+
+          tracker(result);
+
+            " class="game-button">
+            <img src="icons8-hand-rock-skin-type-3-48.png" alt="Rock">
+        </button>
+
+        <!--end of rock button-->
+
+
+        <button onclick="
+
+           computermove= computer_move();
+
+           if(computermove === `Rock`){
+              result=`You Win`;
+            }
+
+            else if(computermove === `Paper`){
+                
+                    result=`Tie`;
+                }
+
+            else if(computermove ===`Scissors`){
+                
+                result=`You Lose`;
+            }
+              
+         
+           
+            alert(`You picked Paper . Computer Picked ${computermove}.Result : ${result}`);
+            tracker(result);
+            
+            "class="game-button">
+
+
+                <img src="icons8-hand-48.png" alt="Paper">
+            </button>
+
+            <!--end of paper button-->
+
+            <button onclick="
+
+            computermove= computer_move();
+
+            if(computermove === `Rock`){
+            result=`You Lose`;
+            }
+
+            else if(computermove === `Paper`){
+                
+                    result=`You Win`;
+                }
+
+            else if(computermove ===`Scissors`){
+                
+                result=`Tie`;
+            }
+
+            alert(`You picked Scissors . Computer Picked ${computermove}.Result : ${result}`);
+            tracker(result);
+
+        
+        
+        "class="game-button">
+            <img src="icons8-victory-hand-48.png" alt="Scissors">
+        </button>
+
+        <!--end of scissors button-->
+
+
+        <!--JS function to generate computer move-->
+      
+        
+            <script src="script.js"></script>
+
+          
+
+        <button onclick="
+
+        reset_score();
+
+
+        " class="reset-button">Reset</button>
+
+        <div class="score">
+            <p class="text">Wins: 0 Losses: 0 Ties: 0</p>
+        </div>
+
+            </div>
+
+        
+        </body>
+        </html>
