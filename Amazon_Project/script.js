@@ -1,8 +1,8 @@
- const product=[
+ const products=[
 {
     name:'Black and Gray Athletic Cotton Socks - 6 Pairs',
     price:1090,
-    image:'/images/ratings.png',
+    image:'/images/socks.jpg',
     },
 
 {
@@ -86,7 +86,7 @@
 {
         name:'Straw Lifeguard Sun Hat for women and girls',
         price:1179,
-        image:'/images/hat.webp-',
+        image:'/images/hat.webp',
     },
 
 {
@@ -183,6 +183,67 @@
     },
 
 
-    ]
+      ]
 
- 
+    let productsHTML='';
+
+    products.forEach((product)=>{
+
+       
+        productsHTML+=`
+         <div class="container">
+        <div  class="image-div">
+
+            <img class="image" src="${product.image}">
+    
+            <div class="title">
+                <p class="text">${product.name}</p>
+            </div>
+            <div class="ratings">
+                <img  class="stars"src="/images/ratings.png">
+            </div>
+            <div class="price">
+                <p class="price-text"><strong>$${product.price/100}</strong></p>
+            </div>
+            <div class="select">
+                <select class="select-menu">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+    
+            </div>
+
+            <div class="add-button">
+                <button class="Add-button-div js-button">Add to Cart</button>
+            </div>
+    
+          </div>
+     </div>`
+    
+    });
+
+
+ document.querySelector('.js-products-grid').
+ innerHTML=productsHTML;
+
+ //code for button starts here
+
+
+ buttonselector=document.querySelectorAll('.js-button');
+
+ buttonselector.forEach((button)=>{
+
+    button.addEventListener('click',()=>{
+
+        console.log('hello');
+  });
+
+  });
