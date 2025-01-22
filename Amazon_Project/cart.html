@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="script.js"></script>
+
+    <div id="cart-container">hello</div>
+
+    <script type="module">
+       // import { cart } from './script.js'; 
+
+        const item = localStorage.getItem('cart');
+        const cartItems = JSON.parse(item) || []; // Use an empty array if null
+
+
+
+        const cartContainer = document.getElementById('cart-container');
+        cartContainer.innerHTML = '';
+        cartItems.forEach(item => {
+        if (cartItems.length > 0) {
+            cartItems.forEach(product => {
+                const productHTML = `
+                    <div class="image-div">
+                        <img class="image" src="${product.image}">
+                        <div class="title">
+                            <p class="text">${product.name}</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-text"><strong>$${product.price / 100}</strong></p>
+                        </div>
+                    </div>`;
+                cartContainer.innerHTML += productHTML;
+            });
+        } else {
+            cartContainer.innerHTML = '<p>Your cart is empty.</p>'; // Display message if cart is empty
+        }
+        })
+    </script>
+</body>
+</html>
