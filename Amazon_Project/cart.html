@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CART</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div id="cart-container"></div>
+
+    <!-- Include the Day.js UMD version -->
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+
     <script src="script.js"></script>
-
-    <div id="cart-container">hello</div>
-
-    <script type="module">
-       // import { cart } from './script.js'; 
-
+    
+    <script>
         const item = localStorage.getItem('cart');
         const cartItems = JSON.parse(item) || []; // Use an empty array if null
 
-
-
         const cartContainer = document.getElementById('cart-container');
-        cartContainer.innerHTML = '';
-        cartItems.forEach(item => {
+
         if (cartItems.length > 0) {
+            cartContainer.innerHTML = '<div class="top"><strong>Your Cart</strong></div>';
+
             cartItems.forEach(product => {
-                const productHTML = `
-                    <div class="image-div">
-                        <img class="image" src="${product.image}">
-                        <div class="title">
-                            <p class="text">${product.name}</p>
-                        </div>
-                        <div class="price">
-                            <p class="price-text"><strong>$${product.price / 100}</strong></p>
+                const productHTML =` 
+                    <div class="cart-container-page">
+                        <div class="image-div">
+                            <div class="delivery-date-cart-page">date</div>
+                            <img class="image-cart-page" src="${product.image}">
+                            <div class="title-container">
+                                <p class="text-cart-page">${product.name}</p>
+                            </div>
+                            <div class="price">
+                                <p class="price-text-page"><strong>Price: $${product.price / 100}</strong></p>
+                            </div>
                         </div>
                     </div>`;
                 cartContainer.innerHTML += productHTML;
@@ -41,7 +43,10 @@
         } else {
             cartContainer.innerHTML = '<p>Your cart is empty.</p>'; // Display message if cart is empty
         }
-        })
+
+        console.log('Current Date:', dayjs().format('YYYY-MM-DD'));
+
     </script>
+
 </body>
 </html>
