@@ -13,8 +13,6 @@
     <!-- Include the Day.js UMD version -->
     <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
 
-    <script src="script.js"></script>
-    
     <script>
         const item = localStorage.getItem('cart');
         const cartItems = JSON.parse(item) || []; // Use an empty array if null
@@ -24,28 +22,68 @@
         if (cartItems.length > 0) {
             cartContainer.innerHTML = '<div class="top"><strong>Your Cart</strong></div>';
 
+            let productHTML = '';
+
+            // Date calculations
+            const today = dayjs();
+
+            // Delivery options
+            const deliveryoptions = [
+                {
+                    deliverytime: 7,
+                    id: '1',
+                    price: 0
+                },
+                {
+                    deliverytime: 3,
+                    id: '2',
+                    price: 499
+                },
+                {
+                    deliverytime: 1,
+                    id: '3',
+                    price: 999
+                }
+            ];
+
             cartItems.forEach(product => {
-                const productHTML =` 
+                // Generate delivery options HTML for each product
+                let deliveryHTML = '';
+
+                deliveryoptions.forEach((displayoption) => {
+                    const deliveryDate = today.add(displayoption.deliverytime, 'days').format('dddd, MMMM D, YYYY');
+                    deliveryHTML += `
+                        <div class="display1">
+                            <div class="option-container">
+                                <input class="option" type="radio" name="delivery-${product.name}" id="${displayoption.id}">
+                            </div>
+                            <div class="deliverydate">${deliveryDate}</div>
+                            <div class="shipping-div">Shipping fee: $${displayoption.price}</div>
+                        </div>`;
+                });
+
+                // Add product HTML with delivery options
+                productHTML += `
                     <div class="cart-container-page">
                         <div class="image-div">
-                            <div class="delivery-date-cart-page">date</div>
+                            <div class="delivery-date-cart-page">
+                                ${deliveryHTML}
+                            </div>
                             <img class="image-cart-page" src="${product.image}">
                             <div class="title-container">
                                 <p class="text-cart-page">${product.name}</p>
                             </div>
                             <div class="price">
-                                <p class="price-text-page"><strong>Price: $${product.price / 100}</strong></p>
+                                <p class="price-text-page"><strong>Price: $${(product.price / 100).toFixed(2)}</strong></p>
                             </div>
                         </div>
                     </div>`;
-                cartContainer.innerHTML += productHTML;
             });
+
+            cartContainer.innerHTML += productHTML; // Append all products to the cart container
         } else {
             cartContainer.innerHTML = '<p>Your cart is empty.</p>'; // Display message if cart is empty
         }
-
-        console.log('Current Date:', dayjs().format('YYYY-MM-DD'));
-
     </script>
 
 </body>
