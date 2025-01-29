@@ -176,7 +176,7 @@ const products=[
             image:'/images/rug.jpg',
         },
     
-        {
+    {
             name:'Non-Stick Cookware Set, Pots, Pans and Utensils - 15',
             price:1190,
             image:'/images/pots.webp',
@@ -223,8 +223,8 @@ const products=[
     
                 <div class="add-button">
                     <button class="Add-button-div js-button"
-                    data-product-name="${product.name}
-                    data-product-image="${product.image}
+                    data-product-name="${product.name}"
+                    data-product-image="${product.image}"
                     data-product-price="${product.price}">Add to Cart</button>
                 </div>
         
@@ -239,7 +239,7 @@ const products=[
     
      //code for button starts here
     
-     export const cart=[];
+      const cart=[];
     
         const buttonSelector = document.querySelectorAll('.js-button');
         buttonSelector.forEach((button) => {
@@ -260,3 +260,4 @@ const products=[
         console.log(cart);
     });
 });
+
