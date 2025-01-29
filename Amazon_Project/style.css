@@ -142,7 +142,8 @@ html, body {
     width: 600px;
     margin-top: 10px;
     margin-left: 70px;
-    height: 250px;
+    height: 270px;
+   
 }
 
 .image-cart-page {
@@ -168,8 +169,9 @@ html, body {
 
 .delivery-date-cart-page {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: -20px; 
+   
 }
 
 
@@ -191,4 +193,35 @@ html, body {
     padding: 2px 8px;
     border-radius: 5px;
     font-weight: bold; 
+    margin-left: 40px;
+    right: -100px;
+}
+.display1{
+    margin-right:120px;
+    margin-top: 30px;
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;  
+    
+}
+.option{
+    transform: scale(1.6); 
+    
+}
+.option-container{
+    width:10px;
+  
+    display: inline-block;
+   
+}
+.deliverydate{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 12px;
+   
+}
+.shipping-div{
+   margin-top: 10px;
+   color: rgb(41, 135, 218);
+   margin-left:5px;
 }
