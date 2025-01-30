@@ -14,6 +14,25 @@
     <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
 
     <script>
+
+              //console.log('Current Date:', dayjs().format('YYYY-MM-DD'));
+
+            const today=dayjs();
+
+    const todaydate=today.format('dddd, MMMM D , YYYY');
+    console.log(todaydate);
+
+    const oneweekafter=today.add(7,'days');
+    const oneweekafter_formatted=oneweekafter.format('dddd, MMMM D , YYYY');
+
+    const threedaysafter=today.add(3,'days');
+    const threedaysafter_formatted=threedaysafter.format('dddd, MMMM D , YYYY');
+    console.log(threedaysafter_formatted);
+
+    const onedayafter=today.add(1,'days');
+    const onedayafter_formatted=onedayafter.format('dddd, MMMM D , YYYY');
+    console.log(onedayafter_formatted);
+   
         const item = localStorage.getItem('cart');
         const cartItems = JSON.parse(item) || []; // Use an empty array if null
 
@@ -32,19 +51,24 @@
                 {
                     deliverytime: 7,
                     id: '1',
-                    price: 0
+                    price: 0,
+                    date:oneweekafter_formatted
                 },
                 {
                     deliverytime: 3,
                     id: '2',
-                    price: 499
+                    price: 499,
+                    date:threedaysafter_formatted
                 },
                 {
                     deliverytime: 1,
                     id: '3',
-                    price: 999
+                    price: 999,
+                    date:onedayafter_formatted
                 }
             ];
+
+         
 
             cartItems.forEach(product => {
                 // Generate delivery options HTML for each product
@@ -57,14 +81,16 @@
                             <div class="option-container">
                                 <input class="option" type="radio" name="delivery-${product.name}" id="${displayoption.id}">
                             </div>
-                            <div class="deliverydate">${deliveryDate}</div>
-                            <div class="shipping-div">Shipping fee: $${displayoption.price}</div>
-                        </div>`;
+                            <div class="deliverydate" data-date="${displayoption.date}" >${displayoption.date}</div>
+                            
+                        </div>
+                        <div class="shipping-div">Shipping fee: $${displayoption.price/100}</div>`;
                 });
 
                 // Add product HTML with delivery options
                 productHTML += `
                     <div class="cart-container-page">
+                        <div class="delivery-date"><p class="dateonpage">YYYY-MM-DD</p></div>
                         <div class="image-div">
                             <div class="delivery-date-cart-page">
                                 ${deliveryHTML}
@@ -78,12 +104,45 @@
                             </div>
                         </div>
                     </div>`;
+                    
             });
 
             cartContainer.innerHTML += productHTML; // Append all products to the cart container
         } else {
             cartContainer.innerHTML = '<p>Your cart is empty.</p>'; // Display message if cart is empty
         }
+
+          //
+          
+   const date_dom= document.querySelector('.dateonpage').textContent;
+   console.log(date_dom);
+
+  
+
+
+    // Code to select the radio button and log the date
+
+    const deliveryRadios = document.querySelectorAll('.option');
+    deliveryRadios.forEach((radio) => {
+        radio.addEventListener('click', () => {
+            // Find the closest parent `.display1` element
+            const display1 = radio.closest('.display1');
+            
+            // Find the `.deliverydate` element within the same `.display1`
+            const deliveryDateElement = display1.querySelector('.deliverydate');
+            
+            // Access the `data-date` attribute
+            const selectedDate = deliveryDateElement.dataset.date;
+            
+            console.log(selectedDate);
+        });
+    });
+
+    
+      
+        
+        
+       
     </script>
 
 </body>
