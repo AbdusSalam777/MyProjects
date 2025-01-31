@@ -142,7 +142,7 @@ html, body {
     width: 600px;
     margin-top: 10px;
     margin-left: 70px;
-    height: 270px;
+    height: 300px;
    
 }
 
@@ -185,16 +185,14 @@ html, body {
 
 .delivery-date-cart-page {
     position: absolute;
-    top: 23px;
     right: 10px; 
     font-size: 14px;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 2px 8px;
     border-radius: 5px;
     font-weight: bold; 
     margin-left: 40px;
-    right: -100px;
+    right: -70px;
+   
 }
 .display1{
     margin-right:120px;
@@ -209,8 +207,6 @@ html, body {
     
 }
 .option-container{
-    width:10px;
-  
     display: inline-block;
    
 }
@@ -221,7 +217,83 @@ html, body {
    
 }
 .shipping-div{
-   margin-top: 10px;
+   margin-top: 20px;
    color: rgb(41, 135, 218);
-   margin-left:5px;
+   
+
 }
+.checkout-container{
+    width:400px;
+    height:280px;
+    background-color: rgb(237, 231, 231);
+    position:fixed;
+    top:43px;
+    right:200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.top{
+   
+    display: inline-block;
+}
+.checkout-text{
+    margin-left:130px;
+}
+.items{
+position: relative;
+height:55px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-width: 1px;
+
+}
+.shipping{
+    position: relative;
+    height:55px;
+    border-style:solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+  
+    
+}
+.total{
+    position: relative;
+    height:55px;
+    border-color: rgb(0, 0, 0);
+    border-style:solid;
+    border-width: 1px;
+    
+}
+.container-for-calculations{
+    margin-top:45px;
+}
+.items-show{
+    
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.shipping-show{
+  
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.total-show{
+   
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.items-text-container{
+    margin-top:15px;
+}
+.shipping-text-container{
+    margin-top:15px;
+}
+.total-text-container{
+    margin-top:15px;
+}
+
