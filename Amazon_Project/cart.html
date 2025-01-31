@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Code for checkout page starts here-->
+    <div class="checkout-container">
+
+        <div class="checkout-text"><b>Order Summary</b></p></div>
+
+        <div class="container-for-calculations">
+            <div class="items">
+                <div class="items-text-container">Items :</div>
+                <div class="items-show">O</div>
+            </div>
+            
+            <div class="shipping">
+                <div class="shipping-text-container">Shipping and handling :</div>
+                <div class="shipping-show">O</div>
+            </div>
+            
+            <div class="total">
+                <div class="total-text-container">Total :</div>
+                <div class="total-show">O</div>
+            </div>
+           
+            <div class=""></div>
+        </div>
+        
+    </div>
 
     <div id="cart-container"></div>
 
@@ -63,7 +88,7 @@
 
             cartItems.forEach((product, index) => {
                 // Generate delivery options HTML for each product
-                let deliveryHTML = '';
+                let deliveryHTML='';
 
                 deliveryoptions.forEach((displayoption) => {
                     const deliveryDate = today.add(displayoption.deliverytime, 'days').format('dddd, MMMM D, YYYY');
@@ -121,9 +146,13 @@
             });
         }
 
-
-        //Now code to create the checkout page
     </script>
 
+<!--Code to create html checkout page-->
+`
+ 
+
+
+ 
 </body>
 </html>
