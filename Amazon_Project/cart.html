@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Code for checkout page starts here-->
+  
+
+       <!--Code for checkout page starts here-->
     <div class="checkout-container">
 
         <div class="checkout-text"><b>Order Summary</b></p></div>
@@ -38,7 +40,7 @@
     <!-- Include the Day.js UMD version -->
     <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
 
-    <script>
+    <script type="module">
         const today = dayjs();
         const todaydate = today.format('dddd, MMMM D , YYYY');
         console.log(todaydate);
@@ -142,15 +144,15 @@
 
                     // Update the date for the correct product
                     dateDom.innerHTML = selectedDate;
-                });
+                } );
             });
-        }
+       }
 
+        // Calculate the total price
+   const select =  document.querySelector('.select-menu');
+   console.log(select);
+            
     </script>
-
-<!--Code to create html checkout page-->
-`
- 
 
 
  
