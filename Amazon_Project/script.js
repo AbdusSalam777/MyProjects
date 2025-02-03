@@ -1,4 +1,4 @@
-const products=[
+  const products=[
     {
         name:'Black and Gray Athletic Cotton Socks - 6 Pairs',
         price:1090,
@@ -236,6 +236,8 @@ const products=[
     
      document.querySelector('.js-products-grid').
      innerHTML=productsHTML;
+
+    
     
      //code for button starts here
     
@@ -256,8 +258,7 @@ const products=[
             document.getElementById('cart-counter').textContent = cart.length;
 
         // Optional: Store cart in localStorage
-        localStorage.setItem('cart', JSON.stringify(cart));
+        localStorage.setItem('cart', JSON.stringify(cart));8
         console.log(cart);
     });
 });
-
