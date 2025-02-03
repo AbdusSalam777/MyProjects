@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        /* CSS Code */
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.amazon-logo {
+    height: 60px;
+    width: 124px;
+    margin-left: 10px;
+}
+
+.search {
+    padding-left: 10px;
+    padding-right: 580px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 9px;
+    margin-left: 200px;
+    border-color: darkorange;
+    border-width: 2px;
+    border-radius: 12px;
+}
+
+.cart {
+    height: 40px;
+    background-color: black;
+    border-width: 0px;
+}
+
+.right-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 8px;
+    width: 700px;
+}
+
+.left-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-flex {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.cart-text {
+    color: white;
+    margin-right: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container {
+    height: 450px;
+    border-color: rgb(56, 52, 52);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.image {
+    height: 250px;
+    width: 200px;
+    margin-left: 27px;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.stars {
+    height: 22px;
+    padding-bottom: 10px;
+
+}
+
+.price {
+    height: 25px;
+}
+
+.price-text {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.ratings {
+    height: 12px;
+    margin-left: 10px;
+}
+
+.select-menu {
+    margin-left: 10px;
+    height: 20px;
+    background-color: ghostwhite;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.Add-button-div {
+    background-color: rgb(255, 191, 0);
+    border: 1px solid rgb(242, 194, 0);
+    color: black;
+    border-radius: 20px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+.top {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.cart-container-page {
+    border-color: rgb(56, 52, 52);
+    border-width: 1px;
+    border-style: solid;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 300px;
+   
+}
+
+.image-cart-page {
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.text-cart-page {
+    margin-left: 10px;
+    height: 12px;
+}
+
+.price-text-page {
+    margin-left: 10px;
+    margin-bottom:10px;
+}
+
+.title-container {
+    width: 250px;
+}
+
+.delivery-date-cart-page {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: -20px; 
+   
+}
+
+
+.image-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:10px;
+}
+
+.delivery-date-cart-page {
+    position: absolute;
+    right: 10px; 
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold; 
+    margin-left: 40px;
+    right: -70px;
+   
+}
+.display1{
+    margin-right:120px;
+    margin-top: 30px;
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;  
+    
+}
+.option{
+    transform: scale(1.6); 
+    
+}
+.option-container{
+    display: inline-block;
+   
+}
+.deliverydate{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 12px;
+   
+}
+.shipping-div{
+   margin-top: 20px;
+   color: rgb(41, 135, 218);
+   
+
+}
+.checkout-container{
+    width:400px;
+    height:280px;
+    background-color: rgb(237, 231, 231);
+    position:fixed;
+    top:43px;
+    right:200px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.top{
+   
+    display: inline-block;
+}
+.checkout-text{
+    margin-left:130px;
+}
+.items{
+position: relative;
+height:55px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-width: 1px;
+
+}
+.shipping{
+    position: relative;
+    height:55px;
+    border-style:solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+  
+    
+}
+.total{
+    position: relative;
+    height:55px;
+    border-color: rgb(0, 0, 0);
+    border-style:solid;
+    border-width: 1px;
+    
+}
+.container-for-calculations{
+    margin-top:45px;
+}
+.items-show{
+    
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.shipping-show{
+  
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.total-show{
+   
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.items-text-container{
+    margin-top:15px;
+}
+.shipping-text-container{
+    margin-top:15px;
+}
+.total-text-container{
+    margin-top:15px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header-flex">
+        <div class="left-flex">
+            <img class="amazon-logo" src="/images/logo-amazon.png">
+        </div>
+        <div class="middle-flex">
+            <input class="search" type="text" placeholder="Search for products">
+        </div>
+        <div class="right-flex" style="position: relative;">
+            <button class="cart" onclick="window.location.href='cart.html'">
+                <img class="cart" src="/images/cart.png" alt="Cart Icon">
+            </button>
+            <p id="cart-counter" style="position: absolute; top: -10px; right: 12px; background-color: black; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">0</p>
+        </div>
+        <div class="cart-text"><strong>Cart</strong></div>
+    </div>
+
+    <div class="grid js-products-grid"></div>
+
+    <script>
+        // JavaScript Code
+        const products=[
+    {
+        name:'Black and Gray Athletic Cotton Socks - 6 Pairs',
+        price:1090,
+        image:'/images/socks.jpg',
+        },
+    
+    {
+            name:'Intermediate Size Basketball for children',
+            price:2090,
+            image:'/images/basketball.jpg',
+        },
+    
+    {
+            name:'Adults Plain Cotton T-Shirt -Blue colour - 2 Pack',
+            price:1090,
+            image:'/images/t-shirt.jpg',
+        },
+    
+    {
+            name:'2 Slot Bread Electric Toaster - Black colour',
+            price:2067,
+            image:'/images/toaster.jpg',
+        },
+        
+     {
+            name:'6 Piece White Dinner Plate Set on Sale',
+            price:3499,
+            image:'/images/plates.jpg',
+        },
+    
+     {
+            name:'6-Piece Nonstick, Carbon Steel Oven Bakeware Baking ',
+            price:2400,
+            image:'/images/molds.webp',
+        },
+      
+     {
+            name:'Plain Hooded Fleece Sweatshirt for Boys and Men',
+            price:3500,
+            image:'/images/hoodie.jpg',
+        },
+    
+    {
+            name:'Luxury Towel Set - Graphite Gray and Black',
+            price:2899,
+            image:'/images/towl.jpg',
+        },
+    
+    {
+            name:'Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz',
+            price:3390,
+            image:'/images/detergent.jpg',
+        },
+    
+    {
+            name:'Waterproof Knit Athletic Sneakers - Gray',
+            price:2070,
+            image:'/images/shoes.jpg',
+        },
+    
+    {
+            name:'Womens Chiffon Beachwear Cover Up - Black',
+            price:1560,
+            image:'/images/skirt.jpg',
+        },
+    
+     {
+            name:'Womens Two Strap Buckle Sandals - Tan',
+            price:2499,
+            image:'/images/sandles.jpg',
+        },
+    
+    {
+            name:'Electric Glass and Steel Hot Tea Water Kettle - 1.7-Liter',
+            price:3074,
+            image:'/images/kettle.webp',
+        },
+    
+    {
+            name:'Ultra Soft Tissue 2-Ply - 18 Box -Best Quality',
+            price:1095,
+            image:'/images/tissue.jpg',
+        },
+    
+    {
+            name:'Straw Lifeguard Sun Hat for women and girls',
+            price:1179,
+            image:'/images/hat.webp',
+        },
+    
+    {
+            name:'Mens Regular-Fit Quick-Dry Golf Polo Shirt',
+            price:1399,
+            image:'/images/collar-shirt.jpg',
+        },
+    
+    {
+            name:'Trash Can with Foot Pedal - Brushed Stainless Steel',
+            price:1460,
+            image:'/images/bin.jpg',
+        },
+    
+        
+     {
+            name:'Womens Knit Ballet Flat shoes on sale',
+            price:2799,
+            image:'/images/womwn-shoes.jpg',
+        },
+    
+        
+    {
+            name:'Round Sunglasses for Men and Women',
+            price:799,
+            image:'/images/glasses.jpg',
+        },
+    
+    {
+            name:'Womens Chunky Cable Beanie - Gray',
+            price:950,
+            image:'/images/hot-hat.webp',
+        },
+    
+    {
+            name:'Vanity Mirror with Heavy Base - Chrome',
+            price:1299,
+            image:'/images/mirror.jpg',
+        },
+    
+    {
+            name:'Round Airtight Food Storage Containers - 5 Piece',
+            price:1355,
+            image:'/images/food-containers.jpg',
+        },
+    
+        
+     {
+            name:'Countertop Blender - 64oz, 1400 Watts ',
+            price:1095,
+            image:'/images/blender.jpg',
+        },
+    
+     {
+            name:'Mens Full-Zip Hooded Fleece Sweatshirt',
+            price:1365,
+            image:'/images/hood.jpg',
+        },
+    
+        {
+            name:'2-Ply Kitchen Paper Towels - 30 Pack',
+            price:799,
+            image:'/images/towel-roll.jpg',
+        },
+    
+        {
+            name:'10-Piece Mixing Bowl Set with Lids - Floral',
+            price:499,
+            image:'/images/bowls.jpg',
+        },
+    
+        {
+            name:'Blackout Curtains Set 42 x 84-Inch - Black, 2 Panels',
+            price:1999,
+            image:'/images/curtains.jpg',
+        },
+    
+        {
+            name:'Duvet Cover Set with Zipper Closure Best Quality',
+            price:1799,
+            image:'/images/bed-sheet.jpg',
+        },
+    
+        {
+            name:'Bathroom Bath Rug Mat 20 x 31 Inch - Grey',
+            price:1865,
+            image:'/images/rug.jpg',
+        },
+    
+    {
+            name:'Non-Stick Cookware Set, Pots, Pans and Utensils - 15',
+            price:1190,
+            image:'/images/pots.webp',
+        },
+    
+    
+          ]
+          let productsHTML='';
+    
+    products.forEach((product)=>{
+
+       
+        productsHTML+=`
+         <div class="container">
+        <div  class="image-div">
+
+            <img class="image" src="${product.image}">
+    
+            <div class="title">
+                <p class="text">${product.name}</p>
+            </div>
+            <div class="ratings">
+                <img  class="stars"src="/images/ratings.png">
+            </div>
+            <div class="price">
+                <p class="price-text"><strong>$${product.price/100}</strong></p>
+            </div>
+            <div class="select">
+                <select class="select-menu">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+    
+            </div>
+
+            <div class="add-button">
+                <button class="Add-button-div js-button"
+                data-product-name="${product.name}"
+                data-product-image="${product.image}"
+                data-product-price="${product.price}">Add to Cart</button>
+            </div>
+    
+          </div>
+     </div>`
+    
+    });
+
+
+ document.querySelector('.js-products-grid').
+ innerHTML=productsHTML;
+
+
+
+ //code for button starts here
+
+  const cart=[];
+
+    const buttonSelector = document.querySelectorAll('.js-button');
+    buttonSelector.forEach((button) => {
+    button.addEventListener('click', () => {
+        const productName = button.getAttribute('data-product-name');
+        const productImage = button.getAttribute('data-product-image');
+        const productPrice = button.getAttribute('data-product-price');
+
+    localStorage.setItem('cart',JSON.stringify(cart));
+
+        cart.push({ name: productName, image: productImage, price: productPrice });
+
+        // Update cart counter
+        document.getElementById('cart-counter').textContent = cart.length;
+
+    // Optional: Store cart in localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));8
+    console.log(cart);
+});
+});
+</script>
+</body>
+</html>
