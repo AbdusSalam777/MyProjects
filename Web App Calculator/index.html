@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet " href="calculator.css">
+</head>
+<body>
+        <div class="container">
+
+            <input readonly id="display" placeholder=" |" style="
+            display: block;
+            color: white;
+            font-size: 30px;
+            width: 98.9%;
+            height: 80px;
+            background-color: rgb(81, 78, 78);
+            border-radius:15px;
+            border:none;">
+
+            <div class="flex-for-buttons">
+            
+            <button class="operator" id="operator-text" onclick="displayfunc('+')"><b>+</b></button>
+            <button onclick="displayfunc('1')"><b>1</b></button>
+            <button onclick="displayfunc('2')"><b>2</b></button>
+            <button onclick="displayfunc('3')"><b>3</b></button>
+            <button class="operator" id="operator-text"  onclick="displayfunc('-')"><b>−</b></button>
+            <button onclick="displayfunc('4')"><b>4</b></button>
+            <button onclick="displayfunc('5')"><b>5</b></button>
+            <button onclick="displayfunc('6')"><b>6</b></button>
+            <button class="operator"  id="operator-text" onclick="displayfunc('*')"><b>×</b></button>
+            <button onclick="displayfunc('7')"><b>7</b></button>
+            <button onclick="displayfunc('8')"><b>8</b></button>
+            <button onclick="displayfunc('9')"><b>9</b></button>
+            <button class="operator" id="operator-text" onclick="displayfunc('/')"><b>÷</b></button>
+            <button onclick="displayfunc('0')"><b>0</b></button>
+            <button  id="operator-text" onclick="displayfunc('.')"><b>.</b></button>
+            <button onclick="clearfunc('C')"><b>AC</b></button>
+            <button class="operator" id="operator-text" onclick="evaluateExp('=')"><b>=</b></button>
+            <button class="operator" onclick="displayfunc('%')"><b>%</b></button>
+            <button class="operator" onclick="displayfunc(' 3.141')"><b>π </b></button>
+            <button class="operator" onclick="displayfunc(' 2.718')"><b>e</b></button>
+            
+
+            </div>
+        </div>
+        
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
