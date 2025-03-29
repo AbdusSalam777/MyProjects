@@ -1,0 +1,43 @@
+body{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 255, 255);
+}
+.container{
+
+    background-color:rgb(33, 31, 31) ;
+    height: 500px;
+    width:330px;
+    border-radius: 30px;
+   
+    
+}
+button{
+    width: 70px;
+    height:70px;
+    border-radius: 50px;
+    background-color:rgb(133, 131, 131);
+    color: white;
+    font-size:17px;
+    border: none;
+    margin-bottom: 4px;
+    margin-top:4px;
+    cursor: pointer;
+    
+}
+.operator{
+    background-color:rgb(255, 176, 29);
+    
+   
+}
+.flex-for-buttons{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#operator-text{
+     font-size: 21px;
+}
