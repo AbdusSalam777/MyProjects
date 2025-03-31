@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="dictionary.css">
+</head>
+<body>
+
+    <div class="dic-container">
+        <input id="text" type="text" class="input-word" placeholder="Enter a word" >
+        <button onclick="show(text)" class="search-button"><span class="search-text">Search</span></button>
+        
+        <div class="result-container">
+            <div id="syn" class="synonym"><span class="box-text">Synonym</span></div>
+            <div id="ant" class="antonym"><span class="box-text">Example</span></div>
+            <div id="exam" class="example"><span class="box-text">Definition</span></div>
+            <div id="part" class="speech"><span class="box-text">Part of speech</span></div>
+        </div>
+    </div>
+    
+    <script src="dictionary.js"></script>
+</body>
+</html>
