@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height:100vh;
+    overflow: hidden;
+    background-color: rgb(157, 255, 130);
+}
+.dic-container{
+    background-image: url('book.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:700px;
+    width:700px;
+}   
+.input-word{
+    width: 215px;
+    height:35px;
+    margin-top: 250px;
+    margin-left: 100px;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border:none;
+    background-color: rgb(211, 255, 255);
+}
+.search-button{
+    display: block;
+    margin-top:12px;
+    margin-left: 177px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-color: rgb(0, 0, 0);
+}
+.synonym{
+    width:200px;
+    height:40px;
+    background-color: rgb(177, 177, 255);
+
+}
+.antonym{
+  
+    width:200px;
+    height:40px;
+    background-color: rgb(150, 255, 131);
+    
+}
+.example{
+    width:200px;
+    height:40px;
+    background-color: rgb(255, 252, 100);
+
+}
+.speech{
+    width:200px;
+    height:40px;
+    background-color: rgb(255, 165, 174);
+
+}
+.result-container{
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin-right: 50px;
+margin-left: 400px;
+}
+.result-container {
+    position: relative;
+    top: -150px; /* Moves container up */
+}
+.box-text{
+    font-weight:100;
+    font-family:'Pacifico', cursive;
+    margin-left: 10px; 
+}
+.search-text{
+    font-family:'Pacifico', cursive;
+}
