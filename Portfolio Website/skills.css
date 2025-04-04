@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(2, 2, 60);
+}
+.skill-heading,.web-heading,.data-heading,.hacking-heading,.c-heading,.editing-heading{
+    color:white;
+    font-family: poppins;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.web-description,.data-description,.hacking-description,.c-description,.editing-description{
+    width: 600px;
+    color:white;
+    font-family: poppins;
+    text-align: center;
+    margin: 0 auto;
+    font-size: large;
+}
+.imp{
+    color:greenyellow
+}
