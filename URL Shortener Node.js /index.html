@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form id="form">
+
+        <div class="main-div">
+
+       <h2 class="title">
+        URL Shortener
+       </h2>
+
+       <div>
+            <label for="url"><span class="url-text">Enter URL :</span></label>
+            <input class="url-input" name="url" type="text" id="url">
+       </div>
+
+       <div>    
+           <label for="short"><span class="short-text">Enter Custom Short URL : </span></label>
+           <input class="short-input" name="short" type="text" id="short">
+       </div>
+
+        <button class="button" type="submit">
+            Submit
+        </button>
+
+        <p class="head">Shortened URL</p>
+
+       <div class="ans" id="ans"><a></a></div>
+       
+        </div>
+
+    </form>
+    
+   <script src="script.js"></script>
+</body>
+</html>
