@@ -1,0 +1,155 @@
+body {
+  font-family: poppins;
+}
+.checkout-container {
+  width: 400px;
+  height: 280px;
+ background: linear-gradient(to right, #f6c628, #e0c4c4);
+  position: fixed;
+  top: 43px;
+  right: 200px;
+  transition: transform 0.5s ease;
+}
+.checkout-container:hover{
+ transform: scale(1.05);
+}
+.top {
+  display: inline-block;
+  
+}
+.checkout-text {
+  margin-left: 130px;
+  text-decoration: underline;
+}
+.items {
+  position: relative;
+  height: 55px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.shipping {
+  position: relative;
+  height: 55px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.total {
+  position: relative;
+  height: 55px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.container-for-calculations {
+  margin-top: 45px;
+}
+.items-show {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color:rgb(28, 153, 28);
+  font-weight: bold;
+}
+.shipping-show {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color:rgb(28, 153, 28);
+  font-weight: bold;
+}
+.total-show {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color:rgb(28, 153, 28);
+  font-weight: bold;
+}
+.items-text-container {
+  margin-top: 15px;
+}
+.shipping-text-container {
+  margin-top: 15px;
+}
+.total-text-container {
+  margin-top: 15px;
+}
+.option-container {
+  display: inline-block;
+}
+.deliverydate {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 12px;
+}
+.shipping-div {
+  margin-top: 20px;
+  color: rgb(41, 135, 218);
+}
+.cart-container-page {
+  border-color: rgb(56, 52, 52);
+  border-width: 1px;
+  border-style: solid;
+  width: 600px;
+  margin-top: 10px;
+  margin-left: 70px;
+  height: 350px;
+}
+
+.image-cart-page {
+  height: 150px;
+  width: 150px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.text-cart-page {
+  margin-left: 10px;
+  height: 12px;
+}
+
+.price-text-page {
+  margin-left: 10px;
+  margin-bottom: 8px;
+  color: rgb(4, 221, 4);
+}
+
+.title-container {
+  width: 250px;
+}
+
+.delivery-date-cart-page {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+.image-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.delivery-date-cart-page {
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 40px;
+  right: -70px;
+}
+.display1 {
+  margin-right: 120px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.option {
+  transform: scale(1.6);
+}
+.dateonpage {
+  margin-left: 50px;
+}
