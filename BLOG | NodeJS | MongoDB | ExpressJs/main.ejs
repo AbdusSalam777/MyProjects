@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+
+        <nav class="nav">
+          <ul class="ul-el">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main><%- body %></main>
+
+      <footer class="footer">
+        &copy; <%= new Date().getFullYear(); %>   Abdul • Built with NodeJs & MongoDB
+      </footer>
+    </div>
+  </body>
+</html>
