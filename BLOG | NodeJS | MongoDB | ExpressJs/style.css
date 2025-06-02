@@ -1,0 +1,85 @@
+body {
+  background-color: antiquewhite;
+  color: rgb(0, 0, 0);
+  font-family: poppins;
+}
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.post{
+    text-decoration: underline;
+}
+header a {
+  color: white;
+}
+.ul-el {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  list-style: none;
+}
+.nav {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+h3,h2 {
+  text-align: center;
+}
+.img {
+   display: block;
+  margin: 0px auto;  
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.img:hover {
+  transform: scale(1.05);
+}
+.footer {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    text-align: center;
+}
+.date{
+    margin-left: 350px;
+}
+.blog-list{
+    margin-left:500px;
+}
+.ul-of-posts {
+  margin-left: 420px; 
+  list-style: none;
+  padding: 0;
+  max-width: 700px; 
+}
+
+.li-of-posts {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc; 
+}
+
+.li-of-posts a {
+  text-decoration: none;
+  color: black; 
+}
+
+.date {
+  color: green;
+  font-weight: normal;
+  margin-left: 20px; 
+  white-space: nowrap; 
+}
