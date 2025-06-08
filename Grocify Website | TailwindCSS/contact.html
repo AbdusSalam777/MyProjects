@@ -49,7 +49,7 @@
         Phone :  +92 300 1234567
       </p>
       <p class="text-lg sm:text-xl md:max-w-xl ml-5 mt-10">
-        Address : 476 , Block-C , Model Town , Lahore
+        Address : 476 A , Block-C , Model Town , Lahore
       </p>
     </div>
 
@@ -61,34 +61,35 @@
     </h1>
 
     <br>
-    <div class="bg-slate-900 p-5 w-[500px] pb-12">
+    <div class=" bg-slate-900 p-5 w-[500px] pb-12">
         <h2
       class="text-2xl sm:text-3xl sm:mt-[6px] md:text-2xl md:mt-[14px] md:font-bold ml-5">
       Name 
     </h2>
-    <input type="text" placeholder="Enter Name" class="ml-5 mt-2 md:w-80 lg:w-96 h-8 text-black">
+    <input id="name" type="text" placeholder="Enter Name" class="ml-5 mt-2 md:w-80 lg:w-96 h-8 text-black">
             <h2
       class="text-2xl sm:text-3xl sm:mt-[6px] md:text-2xl md:mt-[14px] md:font-bold ml-5 ">
       Email
     </h2>
-    <input placeholder="Enter Email" class="ml-5 mt-2 md:w-80  lg:w-96 h-8 text-black">
+    <input id="email" placeholder="Enter Email" class="ml-5 mt-2 md:w-80  lg:w-96 h-8 text-black">
             <h2
       class="text-2xl sm:text-3xl sm:mt-[6px] md:text-2xl md:mt-[14px] md:font-bold ml-5">
       Password
     </h2>
-    <input placeholder="Enter Password" type="password" class="ml-5 mt-2 md:w-80  lg:w-96 h-8 text-black">
+    <input id="password" placeholder="Enter Password" type="password" class="ml-5 mt-2 md:w-80  lg:w-96 h-8 text-black">
      <h2
       class="text-2xl sm:text-3xl sm:mt-[6px] md:text-2xl md:mt-[14px] md:font-bold ml-5">
       Feedback
     </h2>
-    <input placeholder="Give Feedback" type="text" class="ml-5 mt-2 md:w-80 lg:w-96 h-8 text-black">
+    <input id="feedback" placeholder="Give Feedback" type="text" class="ml-5 mt-2 md:w-80 lg:w-96 h-8 text-black">
     <button class="block bg-yellow-400 mt-6 md:w-80 lg:w-96 h-8 ml-5 transition-transform duration-300 ease-in
-     hover:scale-105">Submit</button>
+     hover:scale-105 hover:bg-black hover:text-yellow-400" onclick="send()">Submit</button>
 </div>
    <br>
      <footer class="text-xl text-center mt-5">
     &copy; Grocify 2025. All rights reserved. 
   </footer>
   <br>
+   <script src="/script.js"></script>
   </body>
 </html>
