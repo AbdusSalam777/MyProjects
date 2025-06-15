@@ -18,18 +18,17 @@ function Nav({setmeals}) {
 
   return (
     <div className="h-[50px] w-full flex justify-center items-center mt-3">
-      <input
-        placeholder="Enter Dish"
-        onChange={handleInput}
-        className="w-1/2 h-[30px] border-2 border-amber-50 border-solid outline-none text-xl text-black text-center bg-amber-50 rounded-xl p-4"
-      ></input>
-      <button
-        onClick={() => getData()}
-        className="bg-amber-400 p-1.5 rounded-xl mx-3 px-4 active:scale-95"
-      >
-        Search
-      </button>
+        <input
+    placeholder="Enter Dish"
+    onChange={handleInput}
+    className="w-1/2 h-12 border border-amber-300 outline-none text-lg text-black text-center bg-amber-100 rounded-lg px-4 py-2 shadow-sm focus:ring-2 focus:ring-amber-400 transition duration-200"
+  />
+
+  <button
+    onClick={() => getData()}
+    className="bg-amber-400 text-white font-semibold py-3 px-3 ml-3 rounded-lg shadow-md hover:bg-amber-500 active:scale-95 transition duration-150">Search</button>
     </div>
-  );
-}
+     );
+    }
+
 export default Nav;
