@@ -46,7 +46,7 @@ function SinglePost() {
           <div className="w-full flex justify-center">
             <img
             src={data.img}
-             className="w-[900px] h-[450px] rounded-2xl">
+             className="w-[700px] h-[200px] md:w-[850px] md:h-[350px] rounded-2xl">
             </img>
           </div>
 
