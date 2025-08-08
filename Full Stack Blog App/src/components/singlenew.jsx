@@ -30,8 +30,8 @@ function SingleNew(){
             </h1>
             <div className="mt-4 flex gap-4">
               <span>Written by</span>
-              <span className="text-blue-700">John Doe</span>
-              <span>2 days ago</span>
+              <span className="text-blue-700">Blog User</span>
+              <span>1 days ago</span>
             </div>
             <div className="mt-4">
               <p className="text-sm md:text-lg text-gray-800">{data.descr}</p>
@@ -42,7 +42,7 @@ function SingleNew(){
           <div className="w-full flex justify-center">
             <img
             src={data.img}
-             className="w-[900px] h-[450px] rounded-2xl">
+             className="w-[700px] h-[200px] md:w-[850px] md:h-[350px] rounded-2xl">
             </img>
           </div>
 
