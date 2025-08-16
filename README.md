@@ -66,7 +66,7 @@
 ## 📺 YouTube Channel  
 
 🎬 I create edits and content about Cristiano Ronaldo on my YouTube channel:  
-👉 [Ronny.ae7](https://youtube.com)  
+👉 [Ronny.ae7](www.youtube.com/@Ronny.ae7-x)  
 
 ---
 
@@ -80,13 +80,12 @@
 
 ## 🤝 Let's Connect  
 
-🐙 [GitHub](https://github.com/your-github-username)  
-💼 [LinkedIn](https://linkedin.com/in/your-linkedin-id)  
+🐙 [GitHub]([https://github.com/your-github-username](https://github.com/AbdusSalam777/MyProjects))  
+💼 [LinkedIn]([https://linkedin.com/in/your-linkedin-id](https://www.linkedin.com/in/abdus-salam-a42a57341/))  
 ✉️ Gmail: **abdusalam0381@gmail.com**  
 
 ---
 
-⚡ **Fun Fact**  
-I don’t just write code…  
-I build projects and dance 💃 with TailwindCSS & React ⚛️  
-
+⚡ In my mind I am always the best ~ Cristiano Ronaldo . 
+⚡ Of Course talent without hardwork is nothing ~ Cristiano Ronaldo .
+⚡Dont prove yourself to anyone ~ Cristiano Ronaldo .
