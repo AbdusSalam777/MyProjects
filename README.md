@@ -23,11 +23,9 @@
 ---
 
 ## 📚 Currently Learning  
-- 🔄 Advanced React (Context API, useReducer, useRef, Zustand, etc.)  
-- 🧩 Backend Projects with Node.js + MongoDB  
-- 🔐 Authentication & Authorization (JWT, Bcrypt, Clerk, Sessions)  
-- 🛒 Full Stack Projects like Amazon Clone, Blog App  
-- ⚡ Freelancing on Fiverr & Upwork  
+- 🔄 Advanced React (Context API, useReducer, useRef, Zustand, etc.)
+- ⚡ Advanced Backend Systems with payment integration
+- ⚡ Creating sensational ui by using GSAP
 
 ---
 
@@ -46,8 +44,7 @@
 | 📱 **QR Code Generator** | React + JS | Generate customizable QR codes. <br> **Features**: Custom colors, Download option |
 | 📚 **Dictionary App** | React + API | Search word definitions. <br> **Features**: Phonetics, Audio pronunciation, Examples |
 | 🛒 **Grocify Website** | React + Tailwind + MongoDB | Grocery delivery website. <br> **Features**: Product cards, Cart, User login |
-| 📰 **Mini Blog Website** | React | Simple blogging platform |
-| 📕 **Library Management (C++)** | C++ OOP | Manage books using file handling |
+
 
 ---
 
