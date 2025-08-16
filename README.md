@@ -1,65 +1,80 @@
- 👋 Hi, I'm Abdus Salam 
+# 👋 Hi, I'm Abdus Salam  
 
 🚀 A passionate **Full Stack Developer** from Pakistan with a flair for building cool and useful web apps.  
-🎯 Focused on becoming a top-tier **MERN Stack Developer** and solving real-world problems through code.
+🎯 Focused on becoming a **top-tier MERN Stack Developer** and solving real-world problems through code.  
 
------
+---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack  
 
-- 💻 **Languages**: JavaScript, Python, C++, HTML, CSS
-- ⚙️ **Frontend**: ReactJS, TailwindCSS
-- 🔧 **Backend**: Node.js, Express.js
-- 🗃️ **Databases**: MongoDB
-- 📦 **Tools**: Git, GitHub, VS Code, Netlify
-- 🎬 **Others**: After Effects (Video Editing), YouTube Creator
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)  
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)  
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)  
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
+![Firebase](https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)  
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
 
------
+---
 
-## 📚 Currently Learning
+## 📚 Currently Learning  
+- 🔄 Advanced React (Context API, useReducer, useRef, Zustand, etc.)  
+- 🧩 Backend Projects with Node.js + MongoDB  
+- 🔐 Authentication & Authorization (JWT, Bcrypt, Clerk, Sessions)  
+- 🛒 Full Stack Projects like Amazon Clone, Blog App  
+- ⚡ Freelancing on Fiverr & Upwork  
 
-- 🔄 Advanced React Concepts (Context API, useReducer, useRef, etc.)
-- 🧩 Backend Projects using Node + MongoDB
-- 🔐 Authentication (JWT, Bcrypt, Sessions)
-- 🛒 Full Stack Projects like Amazon Clone, Blog App
-- ⚡ Freelancing on Fiverr/Upwork very soon
+---
 
------
-
-## 💼 Projects
-
-Here are some of the projects I’ve built recently:
+## 💼 Projects  
 
 | Project | Tech | Description |
-|--------|------|-------------|
-| 🛍️ Amazon Clone | React + Node + MongoDB | Full-stack e-commerce project |
-| 🎥 Movie Search App | React + TMDB API | Search movies and explore trending titles |
-| ✍️ Blog App | MERN Stack | Create, update, delete blog posts |
-| 📚 Dictionary App | JS + API | Search word meanings from API |
-| 🌤️ Weather App | React | Weather info using location/city |
-| 🧠 Quiz App | JavaScript | A simple quiz game with scoring logic |
-| 📦 URL Shortener | Node.js | Shorten and redirect URLs |
-| 📕 Library Management (C++) | OOP | Manage books using file system in C++ |
+|---------|------|-------------|
+| 🛍️ **Full Stack E-Commerce Store** | MERN Stack | E-commerce website with email verification. <br> **Features**: City-based search, 5-day weather forecast, live API data |
+| ✍️ **Full Stack Blog App** | MERN + Clerk | Blog app with authentication. <br> **Features**: Product cards, Add to cart, Secure login |
+| 🎬 **Movie Search App** | React + OMDb API | Search & watchlist movies. <br> **Features**: Instant search, Watchlist saving |
+| 🍲 **Recipe Search App** | MERN + AI API | Recipe finder with AI suggestions. <br> **Features**: Ingredient search, AI-powered recommendations, Recipe management |
+| 🛒 **Amazon Mini Clone** | React + Tailwind + Firebase | A responsive mini Amazon clone. <br> **Features**: Product cards, Add to cart, Auth |
+| 🔗 **URL Shortener** | MERN Stack | Shorten URLs with analytics. <br> **Features**: Custom slugs, Click tracking |
+| 🌦️ **Weather App** | React + Weather API | Weather info & forecast. <br> **Features**: City search, 5-day forecast |
+| 🧠 **Quiz App** | React + JS + CSS | Interactive quiz game. <br> **Features**: Categories, Timer, Scoring |
+| 📱 **QR Code Generator** | React + JS | Generate customizable QR codes. <br> **Features**: Custom colors, Download option |
+| 📚 **Dictionary App** | React + API | Search word definitions. <br> **Features**: Phonetics, Audio pronunciation, Examples |
+| 🛒 **Grocify Website** | React + Tailwind + MongoDB | Grocery delivery website. <br> **Features**: Product cards, Cart, User login |
+| 📰 **Mini Blog Website** | React | Simple blogging platform |
+| 📕 **Library Management (C++)** | C++ OOP | Manage books using file handling |
 
------
+---
 
-## 📺 YouTube Channel
+## 📺 YouTube Channel  
 
-🎬 I create edits and content about **Cristiano Ronaldo** on my YouTube channel:  
-👉 [Ronny.ae7](https://www.youtube.com/@Ronny.ae7-x)
+🎬 I create edits and content about Cristiano Ronaldo on my YouTube channel:  
+👉 [Ronny.ae7](https://youtube.com)  
 
------
+---
 
-## 🤝 Let's Connect
+## 📊 GitHub Stats  
 
-- 🐙 [GitHub](https://github.com/AbdusSalam777/MyProjects)
-- 💼 [LinkedIn](https://www.linkedin.com/in/abdus-salam-a42a57341/)  
-- ✉️ Gmail: abdusalam0381@gmail.com
+![Abdus Salam's GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=tokyonight)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=tokyonight)  
+![GitHub Streak](https://streak-stats.demolab.com/?user=your-github-username&theme=tokyonight)  
 
------
+---
 
-## ⚡ Fun Fact
+## 🤝 Let's Connect  
 
-> I doesn’t just write code …  
-> I makes projects and dance 💃 with TailwindCSS and React ⚛️
+🐙 [GitHub](https://github.com/your-github-username)  
+💼 [LinkedIn](https://linkedin.com/in/your-linkedin-id)  
+✉️ Gmail: **abdusalam0381@gmail.com**  
+
+---
+
+⚡ **Fun Fact**  
+I don’t just write code…  
+I build projects and dance 💃 with TailwindCSS & React ⚛️  
 
