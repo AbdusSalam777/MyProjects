@@ -1,0 +1,6 @@
+@import "tailwindcss";
+/* Apply dark background to Clerk modals */
+.clerk-modal,
+.clerk-signed-in-container {
+  background-color: rgb(7, 2, 41) !important;
+}

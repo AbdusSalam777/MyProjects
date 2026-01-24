@@ -1,0 +1,92 @@
+import {
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
+} from "@tanstack/react-table";
+
+const TimeTable = ({ data, onDelete, onEdit }) => {
+
+  // 🔹 Helper function to convert 24h -> 12h
+  const formatTime12h = (time24) => {
+    const [hour, min] = time24.split(":").map(Number);
+    const ampm = hour >= 12 ? "PM" : "AM";
+    const hour12 = hour % 12 === 0 ? 12 : hour % 12;
+    return `${hour12}:${min.toString().padStart(2, "0")} ${ampm}`;
+  };
+
+  const columns = [
+    { accessorKey: "subject", header: "Subject" },
+    { accessorKey: "day", header: "Day" },
+    { 
+      accessorKey: "time", 
+      header: "Time",
+      cell: ({ getValue }) => formatTime12h(getValue()) // 🔹 12h format
+    },
+    {
+      header: "Actions",
+      cell: ({ row }) => (
+        <div className="flex gap-2 justify-center">
+          <button
+            onClick={() => onEdit(row.index)}
+            className="px-3 py-1 text-sm bg-green-600 hover:bg-gray-600 rounded transition duration-200"
+          >
+            Edit
+          </button>
+          <button
+            onClick={() => onDelete(row.index)}
+            className="px-3 py-1 text-sm bg-red-500 hover:bg-gray-600 rounded transition duration-200"
+          >
+            Delete
+          </button>
+        </div>
+      ),
+    },
+  ];
+
+  const table = useReactTable({
+    data,
+    columns,
+    getCoreRowModel: getCoreRowModel(),
+  });
+
+  return (
+    <div className="mt-6 p-6 bg-gray-900 rounded-2xl shadow-xl overflow-x-auto">
+      <table className="w-full min-w-[500px] border-collapse">
+        <thead className="bg-gray-800 text-gray-400 text-sm uppercase tracking-wider">
+          {table.getHeaderGroups().map((hg) => (
+            <tr key={hg.id}>
+              {hg.headers.map((header) => (
+                <th
+                  key={header.id}
+                  className="py-4 px-4 border-b border-gray-700"
+                >
+                  {flexRender(header.column.columnDef.header)}
+                </th>
+              ))}
+            </tr>
+          ))}
+        </thead>
+
+        <tbody>
+          {table.getRowModel().rows.map((row, i) => (
+            <tr
+              key={row.id}
+              className={i % 2 === 0 ? "bg-gray-900" : "bg-gray-800 hover:bg-gray-700"}
+            >
+              {row.getVisibleCells().map((cell) => (
+                <td
+                  key={cell.id}
+                  className="py-4 px-4 border-b border-gray-700 text-gray-200"
+                >
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default TimeTable;
