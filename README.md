@@ -61,13 +61,6 @@
 
 ---
 
-## 📺 YouTube Channel  
-
-🎬 I create edits and content about Cristiano Ronaldo on my YouTube channel:  
-👉 [Ronny.ae7](www.youtube.com/@Ronny.ae7-x)  
-
----
-
 ## 📊 GitHub Stats  
 
 ![Abdus Salam's GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=tokyonight)  
