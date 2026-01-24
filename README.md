@@ -81,9 +81,3 @@
 🐙 [GitHub]([https://github.com/your-github-username](https://github.com/AbdusSalam777/MyProjects))  
 💼 [LinkedIn]([https://linkedin.com/in/your-linkedin-id](https://www.linkedin.com/in/abdus-salam-a42a57341/))  
 ✉️ Gmail: **abdusalam0381@gmail.com**  
-
----
-
-⚡ In my mind I am always the best ~ Cristiano Ronaldo . 
-⚡ Of Course talent without hardwork is nothing ~ Cristiano Ronaldo .
-⚡Dont prove yourself to anyone ~ Cristiano Ronaldo .
