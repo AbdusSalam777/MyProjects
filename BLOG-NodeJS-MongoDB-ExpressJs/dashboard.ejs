@@ -1,0 +1,15 @@
+<h1>POSTS</h1>
+<ul>
+    <% data.forEach(post => { %>
+     
+     <li class="dash-list">
+        <a class="link" href="#">
+            <%= post.title %>
+        </a>
+        <div class="btn-div">
+            <a href="/write/<%= post._id %>" class="dash-btn">Write</a>
+        </div>
+     </li>
+
+    <% }) %>
+</ul>
