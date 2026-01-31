@@ -21,14 +21,46 @@ const projects = [
       "A MERN Stack e-commerce store website with emial verification system integrated",
     tech: ["React", "Node.js", "MongoDB"],
     live: "https://shopcommercify.netlify.app",
-    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/E-Commerce%20Store%20%7C%20MERN",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/E-Commerce%20Store-MERN",
     image: "/weather.png",
     category: "Full Stack",
     features: [
-      "Search by city name",
-      "5-day weather forecast",
-      "Live weather data from API",
+      "Signup and login to your own account",
+      "Browse products and add to cart",
+      "Get email verification on purchase",
+      
+    ],
+  },
+  {
+    name: "MERN Stack Code IDE",
+    description:
+      "A full-stack code editor IDE supporting HTML,CSS and JS code execution.",
+    tech: ["React", "Node.js", "MongoDB"],
+    live: "https://shopcommercify.netlify.app",
+    code: "http://github.com/AbdusSalam777/MyProjects/tree/main/codeide",
+    image: "/weather.png",
+    category: "Full Stack",
+    features: [
+      "Write and execute HTML, CSS, JS code",
+      "Save the code in different projects",
+      "Delete unwanted projects",
       "Responsive UI with Tailwind CSS",
+    ],
+  },
+  {
+    name: "Learnease",
+    description:
+      "A full-stack website that helps students to manage their studies effectively.",
+    tech: ["React", "Node.js", "MongoDB"],
+    live: "https://learneasedev.netlify.app/",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/learnease",
+    image: "/weather.png",
+    category: "Full Stack",
+    features: [
+      "Add quizzes,assignments and classes schedule",
+      "Upload word documents to the website",
+      "View and manage all your study materials",
+      "Modern and responsive UI",
     ],
   },
   {
@@ -40,10 +72,10 @@ const projects = [
     image: "/tool.png",
     category: "Full Stack",
     features: [
-      "Product cards with details",
-      "Add to cart functionality",
-      "User authentication",
-      "Responsive shopping UI",
+      "Login with Clerk authentication",
+      "Read and write blog posts",
+      "Add comments to posts",
+      
     ],
   },
   {
@@ -51,7 +83,7 @@ const projects = [
     description: "Find movies with real-time OMDb API results and watchlist.",
     tech: ["React", "API", "CSS"],
     live: "https://mooviq.netlify.app",
-    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Movies%20Search%20APP%20%7C%20REACT",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Movies%20Search%20APP-REACT",
     image: "/moovie.png",
     category: "Frontend",
     features: [
@@ -66,7 +98,7 @@ const projects = [
     description: "Find, save and organize recipes using an AI-powered engine.",
     tech: ["React", "Node.js", "MongoDB"],
     live: "https://recipiffy.netlify.app",
-    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Recipe%20App%20%7C%20REACT",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Recipe%20App-REACT",
     image: "/recipe.png",
     category: "Full Stack",
     features: [
@@ -116,7 +148,7 @@ const projects = [
       "Real-time weather updates with city search and 5-day forecast.",
     tech: ["React", "API", "Tailwind CSS"],
     live: "https://forecastive.netlify.app",
-    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Weather%20App%20%7C%20REACT",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Weather%20App-REACT",
     image: "/weather.png",
     category: "Frontend",
     features: [
