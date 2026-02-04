@@ -16,27 +16,27 @@ import {
 
 const projects = [
   {
-    name: "Full Stack E-Commerce Store",
-    description:
-      "A MERN Stack e-commerce store website with emial verification system integrated",
-    tech: ["React", "Node.js", "MongoDB"],
-    live: "https://shopcommercify.netlify.app",
-    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/E-Commerce%20Store-MERN",
-    image: "/weather.png",
+    name: "Full Stack Blog App",
+    description: "A Blog application build using MERN stack with Clerk.",
+    tech: ["React","MongoDB","Node.js"],
+    live: "https://stackfullblog.netlify.app",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Full%20Stack%20Blog%20App",
+    image: "/tool.png",
     category: "Full Stack",
     features: [
-      "Signup and login to your own account",
-      "Browse products and add to cart",
-      "Get email verification on purchase",
+      "Login with Clerk authentication",
+      "Read and write blog posts",
+      "Add comments to posts",
       
     ],
   },
+  
   {
     name: "MERN Stack Code IDE",
     description:
       "A full-stack code editor IDE supporting HTML,CSS and JS code execution.",
     tech: ["React", "Node.js", "MongoDB"],
-    live: "https://shopcommercify.netlify.app",
+    live: "https://codestackide.netlify.app/",
     code: "http://github.com/AbdusSalam777/MyProjects/tree/main/codeide",
     image: "/weather.png",
     category: "Full Stack",
@@ -64,20 +64,22 @@ const projects = [
     ],
   },
   {
-    name: "Full Stack Blog App",
-    description: "A Blog application build using MERN stack with Clerk.",
-    tech: ["React","MongoDB","Node.js"],
-    live: "https://stackfullblog.netlify.app",
-    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/Full%20Stack%20Blog%20App",
-    image: "/tool.png",
+    name: "Full Stack E-Commerce Store",
+    description:
+      "A MERN Stack e-commerce store website with emial verification system integrated",
+    tech: ["React", "Node.js", "MongoDB"],
+    live: "https://shopcommercify.netlify.app",
+    code: "https://github.com/AbdusSalam777/MyProjects/tree/main/E-Commerce%20Store-MERN",
+    image: "/weather.png",
     category: "Full Stack",
     features: [
-      "Login with Clerk authentication",
-      "Read and write blog posts",
-      "Add comments to posts",
+      "Signup and login to your own account",
+      "Browse products and add to cart",
+      "Get email verification on purchase",
       
     ],
   },
+  
   {
     name: "Movie Search App",
     description: "Find movies with real-time OMDb API results and watchlist.",
